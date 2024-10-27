@@ -12,6 +12,17 @@ function App() {
     if (window.ConfettiPage) {
       window.ConfettiPage.play();
     }
+  
+    const preventReload = (event) => {
+      event.preventDefault();
+      event.returnValue = ''; // Required for Chrome
+    };
+  
+    window.addEventListener('beforeunload', preventReload);
+  
+    return () => {
+      window.removeEventListener('beforeunload', preventReload);
+    };
   }, []);
   return (
     <>
@@ -36,18 +47,21 @@ function App() {
           <a
             href="https://facebook.com/DigitalDentistrySociety"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FaFacebook />
           </a>
           <a
             href="https://instagram.com/digitaldentistrysociety"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FaInstagram />
           </a>
           <a
             href="https://www.linkedin.com/company/digital-dentistry-society"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FaLinkedinIn />
           </a>
