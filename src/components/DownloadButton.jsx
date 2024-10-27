@@ -43,7 +43,7 @@ const DownloadButton = () => {
     "mM3UPtAV": "Prof. Antonin Tichy.png",
     "HVQZLGX2": "Prof. Ashraf Ayoub.png",
     "bYLiCWGZ": "Prof. Burak Yilmaz.png",
-    "uqLXYhjZ": "Prof. Etyenne Schurr.png",
+    "uqLXYhjZ": "Prof. Etyenne Schnurr.jpg",
     "6OZ215NJ": "Prof. Guillermo Pradies.png",
     "TThJt1VZ": "Prof. Murali Srinivasan.png",
     "o8yadltr": "Prof. Pasquale Piombino.png",

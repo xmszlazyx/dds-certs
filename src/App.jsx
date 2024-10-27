@@ -30,7 +30,7 @@ function App() {
           alt="Digital Dentistry Society logo"
           className="logo"
         />
-        <h1>A Special Messsage from Our President</h1>
+        <h1>A Special Message from Our President</h1>
         <ReactPlayer
           url="/Francesco - Thank You Message 2024.mp4"
           controls={true}
