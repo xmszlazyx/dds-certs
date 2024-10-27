@@ -19,7 +19,7 @@ const galaImages = () => {
     };
 
     loadImages();
-  }, []);
+  }, [images]);
 
   return (
     <>

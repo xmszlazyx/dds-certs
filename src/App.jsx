@@ -8,10 +8,11 @@ import DownloadButton from "./components/DownloadButton";
 import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 function App() {
-  useEffect (()=> {
-    window.ConfettiPage.play()
-
-  })
+  useEffect(() => {
+    if (window.ConfettiPage) {
+      window.ConfettiPage.play();
+    }
+  }, []);
   return (
     <>
       <div className="container">

@@ -19,7 +19,7 @@ const dayTwoImages = () => {
     };
 
     loadImages();
-  }, []);
+  }, [images]);
 
   return (
     <>
