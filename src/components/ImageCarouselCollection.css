@@ -1,26 +1,16 @@
-.carousel-container {
-  margin: 0;
+
+.carousel-image {
+  height: 100%;
+  object-fit: cover;
 }
-  
-  .carousel-image {
+
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 250px;
     width: 100%;
-    object-fit: cover;
   }
-  
-  @media (max-width: 768px) {
-    .carousel-container {
-      height: 400px;
-      width: 100%;
-    }
+
+  .carousel-image {
+    max-height: 250px;
   }
-  
-  @media (max-width: 480px) {
-    .carousel-container {
-      height: 350px;
-    }
-  
-    .carousel-image {
-      max-height: 350px;
-    }
-  }
-  
+}
