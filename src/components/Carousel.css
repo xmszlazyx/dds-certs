@@ -1,0 +1,43 @@
+/* Style for Swiper container */
+.swiper-container {
+    width: 100%; /* Full width of the parent container */
+    max-width: 1280px; /* Set a max width for larger screens */
+    height: auto; /* Let the height adjust automatically */
+    margin: 0 auto; /* Center the Swiper container */
+    overflow: hidden; /* Ensure partial slides are visible */
+    position: relative; /* Necessary for positioning slides */
+    touch-action: none;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Make sure slides take full height */
+    width: calc(100% - 20px); /* Subtract spaceBetween for proper alignment */
+  }
+  
+  .swiper-slide img {
+    width: 100%; /* Ensure the image takes full slide width */
+    height: auto;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+
+  @media (max-width: 768px) {
+    .swiper-container {
+      height: 400px; /* Smaller height for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .swiper-container {
+      height: 350px; /* Smaller height for very small screens */
+    }
+
+    .swiper-slide img {
+      max-height: 350px;
+    }
+
+  }

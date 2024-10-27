@@ -1,0 +1,47 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+.button {
+  margin: 1.25rem;
+  padding: 1.5rem;
+}
+
+a[href="https://confettipage.com"] {
+  visibility: hidden;
+}
+
+.logo {
+  width: 30%;
+}
+
+.video {
+  max-width: 50%;
+  margin: auto;
+}
+
+.social-media a {
+  color: #3DBDD9;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+h2 {
+  margin: 1rem;
+}
+
+@media (max-width: 600px) {
+
+  .video {
+    max-width: 100%;
+  }
+
+  .logo {
+    width: 70%;
+  }
+}
+
+
