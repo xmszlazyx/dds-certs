@@ -11,19 +11,17 @@ function App() {
   useEffect(() => {
     if (window.ConfettiPage) {
       window.ConfettiPage.play();
+  
+      // Remove the script tag after the confetti plays to prevent issues
+      setTimeout(() => {
+        const confettiScript = document.querySelector('script[src="https://run.confettipage.com/here.js"]');
+        if (confettiScript) {
+          confettiScript.remove(); // Remove the script after a delay
+        }
+      }, 5000); // Adjust delay based on confetti duration
     }
-  
-    const preventReload = (event) => {
-      event.preventDefault();
-      event.returnValue = ''; // Required for Chrome
-    };
-  
-    window.addEventListener('beforeunload', preventReload);
-  
-    return () => {
-      window.removeEventListener('beforeunload', preventReload);
-    };
   }, []);
+  
   return (
     <>
       <div className="container">
