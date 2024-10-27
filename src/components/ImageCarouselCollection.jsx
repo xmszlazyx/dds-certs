@@ -1,0 +1,241 @@
+import Carousel from "react-bootstrap/Carousel";
+import "./ImageCarouselCollection.css";
+
+Carousel;
+const data = {
+  galaImages: [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+    "8.jpg",
+    "9.jpg",
+    "10.jpg",
+    "11.jpg",
+    "12.jpg",
+    "13.jpg",
+    "14.jpg",
+    "15.jpg",
+    "16.jpg",
+    "17.jpg",
+    "18.jpg",
+    "19.jpg",
+    "20.jpg",
+    "21.jpg",
+    "22.jpg",
+    "23.jpg",
+    "24.jpg",
+    "25.jpg",
+    "26.jpg",
+    "27.jpg",
+    "28.jpg",
+  ],
+  dayTwoImages: [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+    "8.jpg",
+    "9.jpg",
+    "10.jpg",
+    "11.jpg",
+    "12.jpg",
+    "13.jpg",
+    "14.jpg",
+    "15.jpg",
+    "16.jpg",
+    "17.jpg",
+    "18.jpg",
+    "19.jpg",
+    "20.jpg",
+    "21.jpg",
+    "22.jpg",
+    "23.jpg",
+    "24.jpg",
+    "25.jpg",
+    "26.jpg",
+    "27.jpg",
+    "28.jpg",
+    "29.jpg",
+    "30.jpg",
+    "31.jpg",
+    "32.jpg",
+    "33.jpg",
+    "34.jpg",
+    "35.jpg",
+    "36.jpg",
+    "37.jpg",
+    "38.jpg",
+    "39.jpg",
+    "40.jpg",
+    "41.jpg",
+    "42.jpg",
+    "43.jpg",
+    "44.jpg",
+    "45.jpg",
+    "46.jpg",
+    "47.jpg",
+    "48.jpg",
+    "49.jpg",
+    "50.jpg",
+    "51.jpg",
+    "52.jpg",
+    "53.jpg",
+    "54.jpg",
+    "55.jpg",
+  ],
+  dayOneImages: [
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+    "8.jpg",
+    "9.jpg",
+    "10.jpg",
+    "11.jpg",
+    "12.jpg",
+    "13.jpg",
+    "14.jpg",
+    "15.jpg",
+    "16.jpg",
+    "17.jpg",
+    "18.jpg",
+    "19.jpg",
+    "20.jpg",
+    "21.jpg",
+    "22.jpg",
+    "23.jpg",
+    "24.jpg",
+    "25.jpg",
+    "26.jpg",
+    "27.jpg",
+    "28.jpg",
+    "29.jpg",
+    "30.jpg",
+    "31.jpg",
+    "32.jpg",
+    "33.jpg",
+    "34.jpg",
+    "35.jpg",
+    "36.jpg",
+    "37.jpg",
+    "38.jpg",
+    "39.jpg",
+    "40.jpg",
+    "41.jpg",
+    "42.jpg",
+    "43.jpg",
+    "44.jpg",
+    "45.jpg",
+    "46.jpg",
+    "47.jpg",
+    "48.jpg",
+    "49.jpg",
+    "50.jpg",
+    "51.jpg",
+    "52.jpg",
+    "53.jpg",
+    "54.jpg",
+    "55.jpg",
+    "56.jpg",
+    "57.jpg",
+    "58.jpg",
+    "59.jpg",
+    "60.jpg",
+    "61.jpg",
+    "62.jpg",
+    "63.jpg",
+    "64.jpg",
+    "65.jpg",
+    "66.jpg",
+    "67.jpg",
+    "68.jpg",
+    "69.jpg",
+    "70.jpg",
+    "71.jpg",
+    "72.jpg",
+    "73.jpg",
+    "74.jpg",
+    "75.jpg",
+    "76.jpg",
+    "77.jpg",
+    "78.jpg",
+    "79.jpg",
+    "80.jpg",
+    "81.jpg",
+    "82.jpg",
+    "83.jpg",
+    "84.jpg",
+    "85.jpg",
+    "86.jpg",
+    "87.jpg",
+    "88.jpg",
+    "89.jpg",
+    "90.jpg",
+    "91.jpg",
+    "92.jpg",
+    "93.jpg",
+    "94.jpg",
+    "95.jpg",
+    "96.jpg",
+  ],
+};
+
+const ImageCarouselCollection = () => {
+  return (
+    <>
+      <h2>Friday 18th October: Digital Technologies In Daily Practice</h2>
+      <div className="carousel-container">
+        <Carousel fade>
+          {data.dayOneImages.map((image, index) => (
+            <Carousel.Item key={index}>
+              <img
+                src={`/dayOneImages/${image}`}
+                className="carousel-image"
+              ></img>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
+
+      <h2>Saturday 19th October: Clinical Applications</h2>
+      <div className="carousel-container">
+        <Carousel fade>
+          {data.dayTwoImages.map((image, index) => (
+            <Carousel.Item key={index}>
+              <img
+                src={`/dayTwoImages/${image}`}
+                className="carousel-image"
+              ></img>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
+
+      <h2>Gala Dinner at Palazzo Borghese </h2>
+      <div className="carousel-container">
+        <Carousel fade>
+          {data.galaImages.map((image, index) => (
+            <Carousel.Item key={index}>
+              <img
+                src={`/galaImages/${image}`}
+                className="carousel-image"
+              ></img>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
+    </>
+  );
+};
+
+export default ImageCarouselCollection;
