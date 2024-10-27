@@ -90,7 +90,7 @@ const DownloadButton = () => {
     <>
       <Button onClick={handleShow} style={{ backgroundColor: '#3DBDD9', borderColor: '#3DBDD9', color: 'white' }} size="lg">Access Your Speaker Diploma</Button>
       <Modal show={show} onHide={handleClose} animation={false}>
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title>
             Download Your Diploma or Join Our Exclusive Community!
           </Modal.Title>

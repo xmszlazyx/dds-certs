@@ -194,7 +194,7 @@ const ImageCarouselCollection = () => {
   return (
     <>
       <h2>Friday 18th October: Digital Technologies In Daily Practice</h2>
-      <div className="carousel-container">
+      <div className="carousel-container" data-bs-theme="dark">
         <Carousel fade>
           {data.dayOneImages.map((image, index) => (
             <Carousel.Item key={index}>
@@ -208,7 +208,7 @@ const ImageCarouselCollection = () => {
       </div>
 
       <h2>Saturday 19th October: Clinical Applications</h2>
-      <div className="carousel-container">
+      <div className="carousel-container" data-bs-theme="dark">
         <Carousel fade>
           {data.dayTwoImages.map((image, index) => (
             <Carousel.Item key={index}>
@@ -222,7 +222,7 @@ const ImageCarouselCollection = () => {
       </div>
 
       <h2>Gala Dinner at Palazzo Borghese </h2>
-      <div className="carousel-container">
+      <div className="carousel-container" data-bs-theme="dark">
         <Carousel fade>
           {data.galaImages.map((image, index) => (
             <Carousel.Item key={index}>
